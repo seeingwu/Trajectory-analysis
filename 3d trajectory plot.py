@@ -29,6 +29,10 @@ for i in range(len(xline)):
     
 ax.plot3D(xline, yline, zline, 'black')
 ax.scatter3D(xline, yline, zline, c='Orange',s=20)
+
+# set the aixs
+ax.zaxis.set_ticks([data['z'][0],data['z'][1000],data['z'][1900]])
+ax.zaxis.set_ticklabels([data['time'][0],data['time'][1000],data['time'][1900]])
 plt.show()
 
 ''' 
